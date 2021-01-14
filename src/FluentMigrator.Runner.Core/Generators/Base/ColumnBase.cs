@@ -338,5 +338,7 @@ namespace FluentMigrator.Runner.Generators.Base
 
             return string.Format("CONSTRAINT {0} ", Quoter.QuoteIndexName(primaryKeyName));
         }
+
+        public ITypeMap GetTypeMap() => _typeMap;
     }
 }

@@ -33,6 +33,7 @@ namespace FluentMigrator.Runner.Generators.Base
             _descriptionGenerator = descriptionGenerator;
         }
 
+        public ITypeMap GetTypeMap() => _column.GetTypeMap();
         public abstract string Generate(CreateSchemaExpression expression);
         public abstract string Generate(DeleteSchemaExpression expression);
         public abstract string Generate(CreateTableExpression expression);

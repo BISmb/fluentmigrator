@@ -38,6 +38,7 @@ namespace FluentMigrator.Runner.Generators
         /// <returns>The SQL fragment</returns>
         [NotNull]
         string Generate([NotNull] ColumnDefinition column);
+        ITypeMap GetTypeMap();
 
         /// <summary>
         /// Generate the SQL fragment for all column definitions
